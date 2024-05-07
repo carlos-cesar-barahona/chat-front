@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      #app{
+          padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left) !important;
+      }
+      .tf-v1-popup{
+          top: env(safe-area-inset-top) !important;
+          bottom: env(safe-area-inset-bottom) !important;
+      }
+      .tf-v1-popup .tf-v1-iframe-wrapper{
+          padding-bottom: env(safe-area-inset-bottom, 100px) !important;
+      }
+      .custom-menu{
+          padding-top: env(safe-area-inset-top, 30px) !important;
+      }
+    
+      .Vue-Toastification__container{
+          top: env(safe-area-inset-top) !important;
+      }
+     #sticky{
+         position: fixed;
+         top: 0;
+         width: 100%;
+         height: env(safe-area-inset-top) !important;
+         z-index: 100;
+         background-color: white;
+     }
+    
+    </style>    
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

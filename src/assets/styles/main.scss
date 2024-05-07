@@ -1,0 +1,114 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .card{
+    background-color: #021e51!important;
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px!important;
+    box-shadow: 7px 7px 10px -2px #00000040;
+  }
+  .input{
+      width: 100%;
+      outline: 0;
+      border: none;
+      border-bottom: 2px solid #2255ff;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      display: inline-flex;
+      color: #fff;
+      font-size: 1.25em;
+      transition: all .35s ease;
+      background-color: #021e51;  
+  }
+  .input:focus{
+    outline: none;
+    background-color: #021e51;
+    box-shadow: 0 4px 4px -2px #353434;
+  }
+  
+  .input-simple{
+      width: 100%;
+      outline: 0;
+      border: none;
+      border-bottom: 2px solid #2255ff;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      display: inline-flex;
+      color: black;
+      font-size: 1.25em;
+      transition: all .35s ease;
+  }
+  .input-simple:focus{
+    outline: none;
+    box-shadow: 0 4px 4px -2px #353434;
+  }
+  
+  .button-primary{
+    padding: 15px!important;
+    border-radius: 10px!important;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: 700;
+    transition: all 1s ease;
+    background-color: #25f!important;
+    align-self: center;
+    position: relative;
+  }
+  
+  .button-primary.disabled{
+    background-color: #3d4f8a !important;
+  }
+  
+  .button-primary:hover{
+    cursor: pointer!important;
+    background: #557cff!important;  
+  }
+  
+  .button{
+    padding: 0;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    line-height: 1;
+    cursor: auto;
+  }
+  
+  .relative{
+    position:relative;
+  }
+  
+  .absolute{
+    position:absolute;
+  }
+  
+  .fixed{
+    position:fixed;
+  }
+  
+  .top-0{
+    top: 0;
+  }
+  
+  .right-0{
+    right: 0;
+  }
+  
+  
+  .chat-active{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--bs-success);
+    right: 0;
+    bottom: 22px;
+  }
