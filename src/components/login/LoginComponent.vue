@@ -10,10 +10,10 @@
                                 <input type="email" class="input" v-model="form.email" placeholder="Email">
                             </div>
                             <div class="w-100 pb-3 pt-2">
-                                <input class="input" v-model="form.password" placeholder="Password">
+                                <input type="password" class="input" v-model="form.password" placeholder="Password">
                             </div>
                             <div class="w-100">
-                                <button class="button button-primary w-100" :class="isValidForm ? '' : ' disabled ' " @click="isValidForm ? logIn: () => {}">Iniciar</button>
+                                <button class="button button-primary w-100" :class="isValidForm ? '' : ' disabled ' " @click="isValidForm ? logIn() : () => {}">Iniciar</button>
                             </div>
 
                             <div class="w-100">
@@ -39,7 +39,7 @@ export default{
     },
     computed:{
         isValidForm(){
-            return this.form.email != '' && this.form.email.password != '';
+            return this.form.email.length > 0, this.form.password.length > 0;
         }
     },
     methods:{
